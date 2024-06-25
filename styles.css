@@ -225,6 +225,8 @@ button {
 
 @media (max-width: 600px) {
     .card {
-        max-width:600px;
+        max-width:300px;
     }
+    .input-container {
+    width:60%;
 }
