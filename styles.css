@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #7429C6;
+    background-image: url(bg-guess-the-word.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+}
+
+.win_card {
+    display:none;
+    position: absolute;
+    background-color: #C951E7;
+    border-radius: 10px;
+    height:200px;
+    width:300px;
+    padding:20px;
+    
+}
+
+.lose_card {
+    display:none;
+    position: absolute;
+    background-color: #C951E7;
+    border-radius: 10px;
+    height:200px;
+    width:300px;
+    padding:20px;
+    
+}
+
+.win_card.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.lose_card.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.win_card h1 {
+    color: #7429C6;
+    margin-bottom: 10px;
+}
+
+.lose_card h1 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    height:25px;
+    position: absolute;
+    right:30px;
+    top:5px;
+    cursor:pointer;
+    
+}
+
+.card {
+    background-image: linear-gradient(to left top, #384151,#181c28, #181c28, #181c28, #030616);
+    border-radius: 10px;
+    max-width: 700px;
+    max-height:450px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+.card img {
+    margin-top: 30px;;
+    margin-bottom: 24px;;
+}
+
+.random_word {
+    background-color: #4A5567;
+    color: #97A3B6;
+    font-size: 1.8rem;
+    width:90%;
+    height:70px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    font-weight:800;
+    border-bottom: 5px solid black;
+}
+
+.steps {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+.steps h4 {
+    margin-right: 5px;;
+}
+  .steps .circle {
+    height: 5px;
+    width: 5px;
+    margin-right: 5px;
+    background-color: #4D5562;
+    border-radius: 50px;
+  }
+
+  .circle.active {
+    background-color: #7429C6;
+  }
+
+.letters {
+    margin-top: 30px;
+    
+}
+
+.input_container {
+    margin-top: 52px;
+    margin-bottom: 32px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.input_active {
+    
+    width:45px;
+    height:45px;
+    border: 2px solid #97A3B6;
+    border-radius: 10px;
+    background-image: linear-gradient(to left top, #384151,#181c28, #181c28, #181c28, #181c28);
+    margin-right: 7px;
+    color: #97A3B6;
+    font-size: 1.25rem;
+    caret-color: transparent;  
+}
+
+.input_active:focus {
+    outline:none;
+    border-color: #7429C6;
+    background: url('minus-solid\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center bottom;
+    
+}
+
+
+
+
+input, select, textarea {
+    text-align: center;
+    
+}
+
+button {
+    margin-top: 30px;;
+}
+
+.counter {
+    color: #4A5567;
+    font-size: 0.8rem;
+    font-weight: 300;
+ 
+}
+
+.mistakes {
+    color: #4A5567;
+    font-size: 0.8rem;
+    font-weight: 300;
+    margin-left: 60px;
+    
+}
+
+.mistake_letters {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    color: #97A3B6;
+    
+}
+
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px
+}
+
+button {
+    background-color: #C951E7;
+    width:120px;
+    padding: 12px;
+    border-radius: 10px;
+    color: #F2F5F9;
+    border: none;
+    border-bottom: 3px solid #7429C6;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        max-width:600px;
+    }
+}
