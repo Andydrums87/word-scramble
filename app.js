@@ -124,7 +124,7 @@ resetBtn.addEventListener("click", function () {
 function checkWinner () {
     document.querySelector(".random_word").innerHTML = winningWord.toLowerCase();
     winCard.classList.add("active");
-    levelContainer.textContent = `level: ${level}`;
+    levelContainer.textContent = `Level: ${level}. Word was: ${winningWord}`;
     lostLevel.textContent = `You reached level: ${level}`;
 }
     
