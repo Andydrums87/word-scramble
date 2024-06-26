@@ -72,6 +72,7 @@ function makeInput () {
         letterInput = document.createElement('input')
         letterInput.classList.add("input_active");
         letterInput.maxLength = 1;
+        letterInput.autofocus = true;
         inputContainer.appendChild(letterInput)
     })
 }
